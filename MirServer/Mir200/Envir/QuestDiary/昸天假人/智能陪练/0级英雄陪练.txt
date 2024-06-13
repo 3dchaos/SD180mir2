@@ -1,6 +1,0 @@
-..\QuestDiary\昸天假人\智能陪练\0级英雄陪练\零级男战.txt
-..\QuestDiary\昸天假人\智能陪练\0级英雄陪练\零级男道.txt
-..\QuestDiary\昸天假人\智能陪练\0级英雄陪练\零级男法.txt
-..\QuestDiary\昸天假人\智能陪练\0级英雄陪练\零级女战.txt
-..\QuestDiary\昸天假人\智能陪练\0级英雄陪练\零级女法.txt
-..\QuestDiary\昸天假人\智能陪练\0级英雄陪练\零级女道.txt
