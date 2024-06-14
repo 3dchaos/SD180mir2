@@ -1,0 +1,14 @@
+[@CreateHeroOK]
+创建英雄成功\<关闭/@exit>
+
+[@HeroNameExists]
+英雄名称已被使用\<关闭/@exit>
+
+[@CreateHeroFail]
+创建英雄失败\<关闭/@exit>
+
+[@DeleteHeroFail]
+删除英雄失败\<关闭/@exit>
+
+[@DeleteHeroOK]
+删除英雄成功\<关闭/@exit>

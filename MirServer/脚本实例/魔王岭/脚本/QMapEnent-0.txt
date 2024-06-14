@@ -1,0 +1,7 @@
+;此为地图事件功能脚本，用于实现各种与脚本有关的功能
+[@KillPlayMon1] 
+#IF
+#ACT
+INC M11 1
+INC M12 1
+SENDMSG 5 杀死<$STR(M12)>只怪物。

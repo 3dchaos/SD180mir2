@@ -1,0 +1,9 @@
+使用时，需要将X:\MirServer\Mir200目录中的“系统插件.ini”参数 ：远程脚本=0 ，修改为：远程脚本=1
+
+
+远程服务器 ScriptServer.exe 需要设置正确的X:\MirServer\Mir200\Envir目录，
+
+除了支持发送使用脚本文件外，还支持MapInfo.txt和MonGen.txt文件
+
+
+为了脚本安全建议在NPC脚本程序上设置允许指定IP访问，和M2上设置不保存用户名

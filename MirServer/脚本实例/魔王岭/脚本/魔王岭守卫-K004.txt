@@ -1,0 +1,2445 @@
+[@main]
+#if
+check [198] 1
+#say
+您给我一张灵符，我可以带您进入下一关或者返回天关通道\
+<不，我要回天庭/@返回>　　　　　<是的，进入下一关/@下一关>\ \
+　　　　　　　　　　　　<进入天关通道/@天关通道>\
+#ELSESAY
+赶快召唤出弓箭手，盗走天关宝物的怪物就要出现了！\
+拦截逃离的怪物，夺回被盗的宝物！\
+每次用5个弩牌换取弓箭手，都需要付出一张灵符哦\
+请<选择摆放弓箭手位置/@位置>摆放第一个弓箭手，\
+如果移动弓箭手的位置错误，也可以在这里重新放置\ \
+<使用5个弩牌换取弓箭手/@换取>　　<使用1个弩牌移动弓箭手/@移动>\ \
+<领取天关宝物/@领天关宝物>　　　　　　 <查看规则/@规则>          <版权所有/@1>:天宇六区\
+
+
+[@领天关宝物]
+不需要结束这次挑战，你就可以到我这里领取物品，\
+但是领取的物品将由您已经消灭的怪物数量来决定，\
+木，铜，银，金各种宝箱双击后就可以打开，\
+其中的物品会自动放到您的包裹里，\
+请您务必注意，领取时要<确保包裹有足够的空间>哦，\
+否则将会无法领到宝箱或宝箱中的物品。\
+您确认您现在就要来领取吗？\
+<我确认，我现在就要领取/@领取奖励>\
+<等我结束这次挑战后再来领取吧/@EXIT>
+
+[@规则]
+调遣你的弓箭手，拦截逃离的怪物，获得怪物盗走的宝物\
+逃离的怪物越少，您能获得的奖励将更加丰富\
+不放走1个怪物，更有机会获得<金宝箱>\
+拦截47-49个怪物，可获得银宝箱；拦截41-46个怪物，可获得铜宝箱\
+拦截的怪物少于41个，还可以获得木宝箱\
+每次使用5张弩牌换取弓箭手，都需要付出1张灵符\
+<什么是弩牌？/@弩牌>\
+<如何摆放弓箭手/@如何摆放>           <如何移动弓箭手/@如何移动>\
+<如何领取奖励/@如何领取奖励>\
+
+[@如何领取奖励]
+不需要结束这次挑战，你就可以到我这里领取物品，\
+但是领取的物品将由您已经消灭的怪物数量来决定，\
+木，铜，银，金各种宝箱双击后就可以打开，\
+其中的物品会自动放到您的包裹里，\
+请您务必注意，领取时要<确保包裹有足够的空间>哦，\
+否则将会无法领到宝箱或宝箱中的物品。\
+<返回/@规则>\
+
+[@如何移动]
+当您包裹里存在1个弩牌，并且拥有1个以上弓箭手时\
+您可以选择<“使用1个弩牌移动弓箭手”>\
+先选择要移动的弓箭手后，再选择要放置的位置，即可移动\
+如果您已经选择了移动弓箭手，但是放置的位置错误\
+可以再次选择<“选择摆放弓箭手位置”>摆放弓箭手\
+移动弓箭手<“不需要付出灵符”>\
+<返回/@规则>\
+
+[@如何摆放]
+比赛开始，第一次摆放弓箭手时\
+您可以点击<“选择摆放弓箭手位置”>选择摆放第一个弓箭手的位置\
+第一个弓箭手位置一旦放置完毕，则怪物大军开始逃离！\
+您的弓箭手杀死怪物，会在杀死怪物的弓箭手旁掉落<“弩牌”/@1>\
+当您拥有5个弩牌时可以选择<“使用5个弩牌换取弓箭手”>\
+同时您<“必须付出1张灵符”>，将获得再次选择摆放1个弓箭手的机会\
+如果您再交出弩牌后没有立刻摆放弓箭手\
+可以再次选择<“选择摆放弓箭手位置”>进行摆放\
+每次狙击战中您只能摆放6个弓箭手            <返回/@规则>\
+
+[@弩牌]
+弩牌为召唤和移动弓箭手的凭证\
+你可以使用5个弩牌和1张灵符换取1个弓箭手为你作战\
+或者使用1个弩牌为你的1个弓箭手移位\
+杀死逃离的怪物有机会获得弩牌\
+弩牌只能在魔王岭中使用，一但带离魔王岭，他将失去魔力\
+再进入魔王岭时会被传送之力所粉碎\
+<返回/@规则>\
+
+
+[@位置]
+请选择放置弓箭手的位置\
+■<◎1号/@1号> <◎10号/@10号>■\
+■■\
+■<◎2号/@2号> <◎09号/@9号>■\
+■■\
+■<◎3号/@3号> <◎4号/@4号> <◎5号/@5号> <◎6号/@6号> <◎7号/@7号> <◎08号/@8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+
+
+[@换取]
+#IF
+CHECKGAMEGIRD > 0
+#SAY
+请选择需要换取的弓箭手\
+■<◎1号/@1-1号> <◎10号/@10-10号>■\
+■■\
+■<◎2号/@2-2号> <◎09号/@9-9号>■\
+■■\
+■<◎3号/@3-3号> <◎4号/@4-4号> <◎5号/@5-5号> <◎6号/@6-6号> <◎7号/@7-7号> <◎08号/@8-8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSESAY
+召唤弓箭手需要1张灵符\ \ \
+
+
+[@移动]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要移动的弓箭手\
+■<◎1号/@1=1号> <◎10号/@10=10号>■\
+■■\
+■<◎2号/@2=2号> <◎09号/@9=9号>■\
+■■\
+■<◎3号/@3=3号> <◎4号/@4=4号> <◎5号/@5=5号> <◎6号/@6=6号> <◎7号/@7=7号> <◎08号/@8=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@1=1号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号> <◎10号/@1=10号>■\
+■■\
+■<◎2号/@1=2号> <◎09号/@1=9号>■\
+■■\
+■<◎3号/@1=3号> <◎4号/@1=4号> <◎5号/@1=5号> <◎6号/@1=6号> <◎7号/@1=7号> <◎08号/@1=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@2=2号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@2=1号> <◎10号/@2=10号>■\
+■■\
+■<◎2号> <◎09号/@2=9号>■\
+■■\
+■<◎3号/@2=3号> <◎4号/@2=4号> <◎5号/@2=5号> <◎6号/@2=6号> <◎7号/@2=7号> <◎08号/@2=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@3=3号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@3=1号> <◎10号/@3=10号>■\
+■■\
+■<◎2号/@3=2号> <◎09号/@3=9号>■\
+■■\
+■<◎3号> <◎4号/@3=4号> <◎5号/@3=5号> <◎6号/@3=6号> <◎7号/@3=7号> <◎08号/@3=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@4=4号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@4=1号> <◎10号/@4=10号>■\
+■■\
+■<◎2号/@4=2号> <◎09号/@4=9号>■\
+■■\
+■<◎3号/@4=3号> <◎4号> <◎5号/@4=5号> <◎6号/@4=6号> <◎7号/@4=7号> <◎08号/@4=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@5=5号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@5=1号> <◎10号/@5=10号>■\
+■■\
+■<◎2号/@5=2号> <◎09号/@5=9号>■\
+■■\
+■<◎3号/@5=3号> <◎4号/@5=4号> <◎5号> <◎6号/@5=6号> <◎7号/@5=7号> <◎08号/@5=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@6=6号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@6=1号> <◎10号/@6=10号>■\
+■■\
+■<◎2号/@6=2号> <◎09号/@6=9号>■\
+■■\
+■<◎3号/@6=3号> <◎4号/@6=4号> <◎5号/@6=5号> <◎6号> <◎7号/@6=7号> <◎08号/@6=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@7=7号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@7=1号> <◎10号/@7=10号>■\
+■■\
+■<◎2号/@7=2号> <◎09号/@7=9号>■\
+■■\
+■<◎3号/@7=3号> <◎4号/@7=4号> <◎5号/@7=5号> <◎6号/@7=6号> <◎7号> <◎08号/@7=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@8=8号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@8=1号> <◎10号/@8=10号>■\
+■■\
+■<◎2号/@8=2号> <◎09号/@8=9号>■\
+■■\
+■<◎3号/@8=3号> <◎4号/@8=4号> <◎5号/@8=5号> <◎6号/@8=6号> <◎7号/@8=7号> <◎08号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@9=9号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@9=1号> <◎10号/@9=10号>■\
+■■\
+■<◎2号/@9=2号> <◎09号>■\
+■■\
+■<◎3号/@9=3号> <◎4号/@9=4号> <◎5号/@9=5号> <◎6号/@9=6号> <◎7号/@9=7号> <◎08号/@9=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@10=10号]
+#IF
+CHECKITEM 弩牌 1
+#SAY
+请选择需要放置弓箭手的坐标\
+■<◎1号/@10=1号> <◎10号>■\
+■■\
+■<◎2号/@10=2号> <◎09号/@10=9>■\
+■■\
+■<◎3号/@10=3号> <◎4号/@10=4号> <◎5号/@10=5号> <◎6号/@10=6号> <◎7号/@10=7号> <◎08号/@10=8号>■\
+■■■■■■■■■■■■■■■■■■■■■■■■■\
+#ELSEACT
+messagebox 您的包裹里<弩牌>不足1个。
+
+[@10=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 48 47
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@10=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 45 51
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@10=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 41 49
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@10=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 37 45
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@10=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 33 41
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@10=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 29 37
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@10=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 27 33
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@10=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 29 31
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@10=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 51 44 0 K004 31 29
+close
+#ELSEACT
+Messagebox 10号位置，没有弓箭手。 
+
+[@9=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 51 44
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@9=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 45 51
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@9=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 41 49
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@9=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 37 45
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@9=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 33 41
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@9=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 29 37
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@9=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 27 33
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@9=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 29 31
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@9=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 48 47 0 K004 31 29
+close
+#ELSEACT
+Messagebox 9号位置，没有弓箭手。 
+
+[@8=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 51 44
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@8=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 48 47
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@8=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 41 49
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@8=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 37 45
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@8=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 33 41
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@8=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 29 37
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@8=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 27 33
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@8=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 29 31
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@8=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 45 51 0 K004 31 29
+close
+#ELSEACT
+Messagebox 8号位置，没有弓箭手。 
+
+[@7=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 51 44
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@7=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 48 47
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@7=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 45 51
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@7=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 37 45
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@7=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 33 41
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@7=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 29 37
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@7=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 27 33
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@7=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 29 31
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@7=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 41 49 0 K004 31 29
+close
+#ELSEACT
+Messagebox 7号位置，没有弓箭手。 
+
+[@6=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 51 44
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@6=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 48 47
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@6=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 45 51
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@6=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 41 49
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@6=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 33 41
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@6=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 29 37
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@6=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 27 33
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@6=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 29 31
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@6=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 37 45 0 K004 31 29
+close
+#ELSEACT
+Messagebox 6号位置，没有弓箭手。 
+
+[@5=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 51 44
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@5=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 48 47
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@5=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 45 51
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@5=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 41 49
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@5=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 37 45
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@5=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 29 37
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@5=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 27 33
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@5=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 29 31
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@5=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 33 41 0 K004 31 29
+close
+#ELSEACT
+Messagebox 5号位置，没有弓箭手。 
+
+[@4=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 51 44
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@4=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 48 47
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@4=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 45 51
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@4=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 41 49
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@4=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 37 45
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@4=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 33 41
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@4=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 27 33
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@4=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 29 31
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@4=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 37 0 K004 31 29
+close
+#ELSEACT
+Messagebox 4号位置，没有弓箭手。 
+
+[@3=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 51 44
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@3=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 48 47
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@3=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 45 51
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@3=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 41 49
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@3=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 37 45
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@3=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 33 41
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@3=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 29 37
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@3=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 29 31
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@3=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 27 33 0 K004 31 29
+close
+#ELSEACT
+Messagebox 3号位置，没有弓箭手。 
+
+[@2=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 51 44
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@2=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 48 47
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@2=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 45 51
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@2=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 41 49
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@2=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 37 45
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@2=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 33 41
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@2=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 29 37
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@2=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 27 33
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@2=1号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#elseact
+Messagebox 1号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 29 31 0 K004 31 29
+close
+#ELSEACT
+Messagebox 2号位置，没有弓箭手。 
+
+[@1=10号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#elseact
+Messagebox 10号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 51 44
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+[@1=9号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#elseact
+Messagebox 9号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 48 47
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+[@1=8号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#elseact
+Messagebox 8号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 45 51
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+[@1=7号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#elseact
+Messagebox 7号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 41 49
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+[@1=6号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 < 1
+#elseact
+Messagebox 6号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 37 45
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+[@1=5号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#elseact
+Messagebox 5号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 33 41
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+[@1=4号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#elseact
+Messagebox 4号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 29 37
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+[@1=3号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#elseact
+Messagebox 3号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 27 33
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+[@1=2号]
+#if
+CHECKITEM 弩牌 1
+#elseact
+messagebox 移动弓箭手需要1个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#elseact
+Messagebox 2号位置，已经有弓箭手。
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 > 0
+#act
+TAKE 弩牌 1
+CHANGERANGEMONPOS 魔王岭弓箭手 K004 31 29 0 K004 29 31
+close
+#ELSEACT
+Messagebox 1号位置，没有弓箭手。 
+
+
+[@10-10号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 51 44 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 51 44 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 10号位置，已经有弓箭手。 
+
+[@9-9号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 48 47 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 48 47 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 9号位置，已经有弓箭手。 
+
+[@8-8号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 45 51 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 45 51 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 8号位置，已经有弓箭手。 
+
+[@7-7号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 41 49 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 41 49 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 7号位置，已经有弓箭手。 
+
+[@6-6号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 37 45 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 37 45 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 6号位置，已经有弓箭手。 
+
+[@5-5号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 33 41 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 33 41 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 5号位置，已经有弓箭手。 
+
+[@4-4号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 37 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 29 37 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 4号位置，已经有弓箭手。 
+
+[@3-3号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 27 33 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 27 33 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 3号位置，已经有弓箭手。 
+
+
+[@2-2号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 29 31 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 29 31 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 2号位置，已经有弓箭手。 
+
+[@1-1号]
+#if
+CHECKITEM 弩牌 5
+#elseact
+messagebox 召唤弓箭手需要5个弩牌,你没有足够的弩牌
+break
+#if
+CHECKRANGEMONCOUNTEX K004 31 29 魔王岭弓箭手 < 1
+#act
+TAKE 弩牌 5
+GAMEGIRD - 1
+RECALLMOBEX 魔王岭弓箭手 31 29 1 6 30 0 -1
+close
+#ELSEACT
+Messagebox 1号位置，已经有弓箭手。 
+
+[@10号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 51 44 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+[@9号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 48 47 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+[@8号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 45 51 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+[@7号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 41 49 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+[@6号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 37 45 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+[@5号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 33 41 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+[@4号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 29 37 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+
+[@3号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 27 33 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+
+[@2号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 29 31 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+[@1号]
+#if
+equal M10 0
+#act
+Mov M12 0
+RECALLMOBEX 魔王岭弓箭手 31 29 1 1 30 0 -1
+SetScTimer 0 2
+SetScTimer 1 4
+close
+#ELSEACT
+close
+
+[@返回庄园]
+#ACT
+mapmove GA0 69 71
+
+[@领取奖励]
+#if
+equal M11 0
+#say
+您给我一张灵符，我可以带您进入下一关或者返回天关通道\
+<不，我要回天庭/@返回>　　　　　<是的，进入下一关/@下一关>\ \
+　　　　　　　　　　　　<进入天关通道/@天关通道>\
+#act
+break
+
+#if
+large M11 59
+#say
+你本次总共阻击了 <$STR(M12)> 个怪物 \
+您获得了：赤金宝箱\
+您给我一张灵符，我可以带您进入下一关或者返回天关通道\
+<不，我要回天庭/@返回>　　　　　<是的，进入下一关/@下一关>\ \
+　　　　　　　　　　　　<进入天关通道/@天关通道>\
+#act
+set [198] 1
+Mov M11 0
+KillScTimer 0
+KillScTimer 1
+Take 弩牌 46
+give 赤金宝箱 1
+KILLSLAVE K004 39 38 100 * 6 0
+SENDMSG 0 %s 　在魔王岭歼灭了魔王大军的所有怪物。
+break
+
+#if
+large M11 45
+#say
+你本次总共阻击了 <$STR(M12)> 个怪物 \
+您获得了：白银宝箱\
+您给我一张灵符，我可以带您进入下一关或者返回天关通道\
+<不，我要回天庭/@返回>　　　　　<是的，进入下一关/@下一关>\ \
+　　　　　　　　　　　　<进入天关通道/@天关通道>\
+#act
+set [198] 1
+Mov M11 0
+KillScTimer 0
+KillScTimer 1
+Take 弩牌 46
+give 白银宝箱 1
+KILLSLAVE K004 39 38 100 * 6 0
+break
+
+#if
+large M11 39
+#say
+你本次总共阻击了 <$STR(M12)> 个怪物 \
+您获得了：紫铜宝箱\
+您给我一张灵符，我可以带您进入下一关或者返回天关通道\
+<不，我要回天庭/@返回>　　　　　<是的，进入下一关/@下一关>\ \
+　　　　　　　　　　　　<进入天关通道/@天关通道>\
+#act
+set [198] 1
+Mov M11 0
+KillScTimer 0
+KillScTimer 1
+Take 弩牌 46
+give 紫铜宝箱 1
+KILLSLAVE K004 39 38 100 * 6 0
+break
+
+#if
+large M11 0
+#say
+你本次总共阻击了 <$STR(M12)> 个怪物 \
+您获得了：檀木宝箱\
+您给我一张灵符，我可以带您进入下一关或者返回天关通道\
+<不，我要回天庭/@返回>　　　　　<是的，进入下一关/@下一关>\ \
+　　　　　　　　　　　　<进入天关通道/@天关通道>\
+#act
+set [198] 1
+Mov M11 0
+KillScTimer 0
+KillScTimer 1
+Take 弩牌 46
+give 檀木宝箱 1
+KILLSLAVE K004 39 38 100 * 6 0
+break
+
+[@下一关]
+#if
+#act
+MAPMOVE TT
+
+[@返回]
+#act
+MAPMOVE TT
+
+[@1]
+此版本由BLUE专业制作小组成员<天宇网游>独立完成。\ \
+目前很多人版本出了问题、都被制作版本的人谣传是程序引起的\
+现在为了纠正此谣言、我们决定发布《MirYQ仿盛大明文版本1.0》\
+对此行为我们对一些制作版本出售的行家说声抱歉。\
+如果对此版本有什么不理解的、请加QQ群：11473102\
+我们的官方网站:www.MirYQ.com\
+请记住我们的官方网站域名、其它域名与我们无关。\

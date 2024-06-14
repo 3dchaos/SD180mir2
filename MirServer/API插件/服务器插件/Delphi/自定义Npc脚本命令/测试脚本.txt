@@ -1,0 +1,16 @@
+[@main]
+
+#say
+<自定义脚本测试/@测试]
+
+[@测试]
+#if 
+;NpcScriptCmdDemo1.dll支持; MyCheckLevel 等级值 -> 判断人物等级>=等级值
+MyCheckLevel 10
+
+;NpcScriptCmdDemo2.dll支持; MyCheckJob 职业 -> 判断人物职业
+MyCheckJob 0
+
+#act
+MySendMsg NpcScriptCmdDemo1.dll命令返回 0 255
+MySendMsg2 NpcScriptCmdDemo2.dll命令返回 255 0 

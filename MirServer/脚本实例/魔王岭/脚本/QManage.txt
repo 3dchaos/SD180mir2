@@ -1,0 +1,35 @@
+[@OnTimer0]
+#if
+small M10 10
+#act
+GetRandomLineText .\QuestDiary\天关\魔王小怪.txt S14
+MISSION K004 58 43
+PARAM1 31
+PARAM2 20
+PARAM3 1
+PARAM4 0
+MOBPLACE <$STR(S14)>
+INC M10 1
+SENDMSG 5 出现<$STR(M10)>只怪物。
+break
+#elseact
+SetOffTimer 0
+
+[@OnTimer1]
+#if
+small M10 60
+#act
+GetRandomLineText .\QuestDiary\天关\魔王怪.txt S15
+MISSION K004 58 43
+PARAM1 31
+PARAM2 20
+PARAM3 1
+PARAM4 0
+MOBPLACE <$STR(S15)>
+INC M10 1
+SENDMSG 5 出现<$STR(M10)>只怪物。
+break
+#elseact
+movr M10 0
+SetOffTimer 1
+messagebox 魔王岭阻击任务已结束。

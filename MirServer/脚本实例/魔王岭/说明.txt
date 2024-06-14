@@ -1,0 +1,25 @@
+请将
+[MapInfo.txt][MerChant.txt]放在D:\MirServer\Mir200\Envir下
+
+
+脚本里
+[QFunction-0.txt]放在D:\MirServer\Mir200\Envir\Market_Def下
+[魔王岭护卫-D5071C.txt][魔王岭守卫-K004.txt]D:\MirServer\Mir200\Envir\Market_Def下
+[QManage.txt]的内容复制出来放在D:\MirServer\Mir200\Envir\MapQuest_def\QManage.txt的最底行
+[魔王怪.txt][魔王小怪.txt]放在D:\MirServer\Mir200\Envir\QuestDiary\天关 文件下如果没有这个文件请自行创建
+
+
+自己设置怪物暴率
+
+白野猪99
+红野猪99
+牛魔王99
+黑野猪99
+半兽人99
+多钩猫99
+
+
+暴弩牌
+
+
+此脚本只做参考之用！
